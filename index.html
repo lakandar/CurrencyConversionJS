@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currency Conversion App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/>
+      <link rel="icon" src="icon.svg" type="image/icon">
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Currency Conversion App</h1>
+
+        <p class="text-muted text-center">
+          Today's Currency Status...
+        </p>
+        <div id="messageWrapper">
+        </div>
+
+        <div class="w-form">
+
+            <div class="mb-2 d-flex justify-content-between">              
+              <input
+                type="number"
+                class="form-control me-1 border-info"
+                id="firstInput"
+                aria-describedby="emailHelp"
+                placeholder="1" />
+                <select class="form-select" id="firstSelector" aria-label="Default select example">
+                    <!-- <option selected>BDT</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option> -->
+                </select>
+            </div>
+
+            <div class="mb-2 d-flex justify-content-between">
+              <input
+                type="number"
+                class="form-control me-1 border-info"
+                id="secondInput"
+                aria-describedby="emailHelp"
+                placeholder="0.011" />  
+                <select class="form-select" id="secondSelector" aria-label="Default select example">
+                    <!-- <option selected>USD</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option> -->
+                </select>              
+            </div>
+
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header text-center">
+                <h4>-Conversion-</h4>
+            </div>
+
+            <ul class="list-group text-center">            
+              <li class="list-group-item" id="firstOut">
+                <strong>1</strong> <span>Bangladeshi Taka equals</span>
+              </li>
+              <li class="list-group-item" id="secondOut">
+                <strong>0.011</strong> <span>United States Dollar</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <script src="main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></scrip>
+    <script src="https://kit.fontawesome.com/f8261dd14c.js"></script>
+
+  </body>
+</html>
